@@ -21,7 +21,7 @@ public func == (left: ByteBuffer, right: ByteBuffer) -> Bool {
 /// ByteBuffer holds a buffer.
 public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
-    private var buff: ContiguousArray<UInt8>
+    private var buff: ContiguousArray<Byte>
     private var index: Int
 
     /**
@@ -31,17 +31,28 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
     public var size: Int { return buff.count }
 
     public init(size: Int) {
-
         index = 0
         buff = ContiguousArray(count: size, repeatedValue: 0)
     }
 
-    public func clear() {
-        buff = ContiguousArray<UInt8>(count: size, repeatedValue: 0)
+    public convenience init(elements: Array<Byte>) {
+        self.init(size: elements.count)
+
+        for element in elements {
+            write(element)
+        }
+
         index = 0
     }
 
-    public func write(byte: UInt8) {
+
+
+    public func clear() {
+        buff = ContiguousArray<Byte>(count: size, repeatedValue: 0)
+        index = 0
+    }
+
+    public func write(byte: Byte) {
         defer {
             index += 1
         }
@@ -49,20 +60,20 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
     }
 
-    public func read() -> UInt8 {
+    public func read() -> Byte {
         defer {
             index += 1
         }
         return buff[index]
     }
 
-    public subscript (index: Int) -> UInt8 {
+    public subscript (index: Int) -> Byte {
         get {
             return buff[index]
         }
     }
 
-    public subscript(range: Range<Int>) -> ArraySlice<UInt8> {
+    public subscript(range: Range<Int>) -> ArraySlice<Byte> {
         get {
             return buff[range]
         }

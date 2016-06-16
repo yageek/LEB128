@@ -38,6 +38,7 @@
 		0B9F46C81D1344CA007EBB67 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0B9F46C91D1344CA007EBB67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		0B9F46CE1D135B88007EBB67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		0B9F469A1D133B67007EBB67 = {
 			isa = PBXGroup;
 			children = (
+				0B9F46CE1D135B88007EBB67 /* .travis.yml */,
 				0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */,
 				0B9F46C81D1344CA007EBB67 /* LICENSE */,
 				0B9F46C91D1344CA007EBB67 /* README.md */,
