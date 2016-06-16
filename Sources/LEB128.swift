@@ -73,11 +73,11 @@ internal func encode2(out: ByteOut, value: UInt) -> Int {
 
 public func decode(input: ByteIn) -> UInt {
     var result: UInt = 0
-    var shift: UInt8 = 0
+    var shift: UInt = 0
 
     while true {
         let byte = input.read()
-        result |= UInt((byte & 0x7F) >> shift)
+        result |= ((UInt(byte) & 0x7F) << shift)
 
         if (byte >> 7) == 0 {
             break
@@ -88,7 +88,6 @@ public func decode(input: ByteIn) -> UInt {
 }
 
 // MARK: - Signed Integer
-
 
 /**
  Encode the signed integer as LEB128
