@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0BD307591D140AAF0074AC3B"
-               BuildableName = "watchOS LEB128.framework"
+               BuildableName = "LEB128.framework"
                BlueprintName = "watchOS LEB128"
                ReferencedContainer = "container:LEB128.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BD307591D140AAF0074AC3B"
-            BuildableName = "watchOS LEB128.framework"
+            BuildableName = "LEB128.framework"
             BlueprintName = "watchOS LEB128"
             ReferencedContainer = "container:LEB128.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BD307591D140AAF0074AC3B"
-            BuildableName = "watchOS LEB128.framework"
+            BuildableName = "LEB128.framework"
             BlueprintName = "watchOS LEB128"
             ReferencedContainer = "container:LEB128.xcodeproj">
          </BuildableReference>
