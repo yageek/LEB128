@@ -11,6 +11,20 @@ import LEB128
 
 class LEB128Tests: XCTestCase {
 
+    let unsignedMap: [UInt: ByteBuffer] = [
+        0: ByteBuffer(elements: [0]),
+        1: ByteBuffer(elements: [0x01]),
+        2: ByteBuffer(elements: [0x02]),
+        127: ByteBuffer(elements: [0x7f]),
+        128: ByteBuffer(elements: [0x80, 0x01]),
+        129: ByteBuffer(elements: [0x81, 0x01]),
+        130: ByteBuffer(elements: [0x82, 0x01]),
+        12857: ByteBuffer(elements: [0xB9, 0x64]),
+        16256:  ByteBuffer(elements: [0x80, 0x7f]),
+        0x40c:  ByteBuffer(elements: [0x8c, 0x08]),
+        624485:  ByteBuffer(elements: [0xe5, 0x8e, 0x26]),
+    ]
+
     // MARK: Helpers
     private func encodeUnsignedLeb(leb: UInt) -> ArraySlice<Byte> {
         let buff = ByteBuffer(size: 5)
@@ -27,12 +41,9 @@ class LEB128Tests: XCTestCase {
 
     // MARK: Unsigned integer
     func testUnsignedEncode() {
-            XCTAssertEqual([0], encodeUnsignedLeb(0))
-            XCTAssertEqual([1], encodeUnsignedLeb(1))
-            XCTAssertEqual([0x80, 0x7f], encodeUnsignedLeb(16256))
-            XCTAssertEqual([0xb4, 0x07], encodeUnsignedLeb(0x3b4))
-            XCTAssertEqual([0x8c, 0x08], encodeUnsignedLeb(0x40c))
-            XCTAssertEqual([0xe5, 0x8e, 0x26], encodeUnsignedLeb(624485))
+        for (raw, expected) in unsignedMap {
+            XCTAssertEqual(expected[0..<expected.size], encodeUnsignedLeb(raw))
+        }
     }
 
     func testDecodeUnsignedLeb() {

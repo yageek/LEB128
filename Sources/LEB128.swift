@@ -149,7 +149,7 @@ public func decodeSLEB(input: ByteIn) -> Int {
         shift += 7
     }
 
-    if (shift < size) && Int(byte >> 6) == 1 {
+    if (shift < size) && Int(byte >> 7) == 1 {
         result |= -(1 << shift)
     }
     return result
