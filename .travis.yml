@@ -1,0 +1,8 @@
+language: objective-c
+branches:
+    only:
+        - master
+        - develop
+osx_image: xcode7.3
+xcode_project: LEB128.xcodeproj
+xcode_scheme: "OSX LEB128"
