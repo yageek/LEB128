@@ -1,5 +1,5 @@
 /**
-   Algorithms are taken from 
+    Algorithms are taken from
    "DWARF Debugging Information Format Specification Version 2.0, Draft" (PDF)
  */
 
@@ -71,7 +71,13 @@ internal func encode2(out: ByteOut, value: UInt) -> Int {
     return count
 }
 
-public func decode(input: ByteIn) -> UInt {
+/**
+ Decode the unsigned integer as LEB128
+
+ - parameter input: The `ByteIn` to read
+ - returns:         The decoded value
+ */
+public func decodeULEB(input: ByteIn) -> UInt {
     var result: UInt = 0
     var shift: UInt = 0
 
@@ -117,4 +123,34 @@ public func encode(out: ByteOut, value: Int) -> Int {
         count += 1
     }
     return count
+}
+
+
+/**
+ Decode the unsigned integer as LEB128
+
+ - parameter input: The `ByteIn` to read
+ - returns:         The decoded value
+ */
+public func decodeSLEB(input: ByteIn) -> Int {
+    var result: Int = 0
+    var shift: Int = 0
+    let size: Int = sizeof(Int.self)
+
+    var byte: Byte = 0
+
+    while true {
+        byte = input.read()
+        result |= ((Int(byte) & 0x7F) << shift)
+
+        if (byte >> 7) == 0 {
+            break
+        }
+        shift += 7
+    }
+
+    if (shift < size) && Int(byte >> 6) == 1 {
+        result |= -(1 << shift)
+    }
+    return result
 }

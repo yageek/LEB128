@@ -36,10 +36,19 @@ class LEB128Tests: XCTestCase {
     }
 
     func testDecodeUnsignedLeb() {
-        XCTAssertEqual(0, decode(ByteBuffer(elements:[0])))
-        XCTAssertEqual(1, decode(ByteBuffer(elements:[1])))
-        XCTAssertEqual(127, decode(ByteBuffer(elements:[0x7f])))
-        XCTAssertEqual(16256, decode(ByteBuffer(elements:[0x80, 0x7f])))
+        XCTAssertEqual(0, decodeULEB(ByteBuffer(elements:[0])))
+        XCTAssertEqual(1, decodeULEB(ByteBuffer(elements:[1])))
+        XCTAssertEqual(127, decodeULEB(ByteBuffer(elements:[0x7f])))
+        XCTAssertEqual(16256, decodeULEB(ByteBuffer(elements:[0x80, 0x7f])))
+    }
+
+
+    func testDecodSignedLeb() {
+        XCTAssertEqual(0, decodeSLEB(ByteBuffer(elements:[0])))
+        XCTAssertEqual(1, decodeSLEB(ByteBuffer(elements:[1])))
+        XCTAssertEqual(-1, decodeSLEB(ByteBuffer(elements:[0x7f])))
+        XCTAssertEqual(0x3c, decodeSLEB(ByteBuffer(elements:[0x3C])))
+        XCTAssertEqual(-128, decodeSLEB(ByteBuffer(elements:[0x80, 0x7f])))
     }
 
     // MARK: Signed integer

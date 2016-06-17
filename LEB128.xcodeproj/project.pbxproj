@@ -12,7 +12,8 @@
 		0B9F46B81D133C98007EBB67 /* LEB128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B61D133C98007EBB67 /* LEB128.swift */; };
 		0B9F46C01D133CAE007EBB67 /* LEB128Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46BF1D133CAE007EBB67 /* LEB128Tests.swift */; };
 		0B9F46C21D133CAE007EBB67 /* LEB128.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9F46A81D133BE5007EBB67 /* LEB128.framework */; };
-		0B9F46CB1D1344CA007EBB67 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46C91D1344CA007EBB67 /* README.md */; };
+		0BD307001D13FA180074AC3B /* ByteBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */; };
+		0BD307021D13FBC00074AC3B /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD307011D13FBC00074AC3B /* Foundation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		0B9F46C91D1344CA007EBB67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0B9F46CE1D135B88007EBB67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteBufferTests.swift; sourceTree = "<group>"; };
+		0BD307011D13FBC00074AC3B /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				0B9F46B61D133C98007EBB67 /* LEB128.swift */,
 				0B9F46B11D133C0B007EBB67 /* LEB128.h */,
 				0B9F46B21D133C0B007EBB67 /* Info.plist */,
+				0BD307011D13FBC00074AC3B /* Foundation.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -97,6 +101,7 @@
 		0B9F46BE1D133CAE007EBB67 /* LEB128Tests */ = {
 			isa = PBXGroup;
 			children = (
+				0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */,
 				0B9F46BF1D133CAE007EBB67 /* LEB128Tests.swift */,
 				0B9F46C11D133CAE007EBB67 /* Info.plist */,
 			);
@@ -228,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9F46CB1D1344CA007EBB67 /* README.md in Sources */,
+				0BD307021D13FBC00074AC3B /* Foundation.swift in Sources */,
 				0B9F46B71D133C98007EBB67 /* ByteBuffer.swift in Sources */,
 				0B9F46B81D133C98007EBB67 /* LEB128.swift in Sources */,
 			);
@@ -239,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9F46C01D133CAE007EBB67 /* LEB128Tests.swift in Sources */,
+				0BD307001D13FA180074AC3B /* ByteBufferTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

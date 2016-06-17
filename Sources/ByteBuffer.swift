@@ -18,6 +18,7 @@ public func == (left: ByteBuffer, right: ByteBuffer) -> Bool {
     }
     return true
 }
+
 /// ByteBuffer holds a buffer.
 public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
@@ -30,11 +31,21 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
      */
     public var size: Int { return buff.count }
 
+    /**
+      Initialize a buffer with size
+
+     - parameter size: Size as Int
+    */
     public init(size: Int) {
         index = 0
         buff = ContiguousArray(count: size, repeatedValue: 0)
     }
 
+    /**
+     Convenience init for a readable buffer.
+
+     - parameter elements: Elements as `Array<Byte>`
+     */
     public convenience init(elements: Array<Byte>) {
         self.init(size: elements.count)
 
@@ -46,12 +57,19 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
     }
 
 
-
+    /**
+        Reset the buffer
+    */
     public func clear() {
         buff = ContiguousArray<Byte>(count: size, repeatedValue: 0)
         index = 0
     }
 
+    /**
+      Write a `Byte` in the buffer
+
+      - parameter byte: The value to write in
+     */
     public func write(byte: Byte) {
         defer {
             index += 1
@@ -60,6 +78,11 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
     }
 
+    /**
+      Read the current value
+
+     - returns: The `Byte` at the current index.
+   */
     public func read() -> Byte {
         defer {
             index += 1
