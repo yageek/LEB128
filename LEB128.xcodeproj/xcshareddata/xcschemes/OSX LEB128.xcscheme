@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0BD307351D1409580074AC3B"
-               BuildableName = "OSX LEB128.framework"
+               BuildableName = "LEB128.framework"
                BlueprintName = "OSX LEB128"
                ReferencedContainer = "container:LEB128.xcodeproj">
             </BuildableReference>
@@ -44,7 +44,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BD307351D1409580074AC3B"
-            BuildableName = "OSX LEB128.framework"
+            BuildableName = "LEB128.framework"
             BlueprintName = "OSX LEB128"
             ReferencedContainer = "container:LEB128.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BD307351D1409580074AC3B"
-            BuildableName = "OSX LEB128.framework"
+            BuildableName = "LEB128.framework"
             BlueprintName = "OSX LEB128"
             ReferencedContainer = "container:LEB128.xcodeproj">
          </BuildableReference>
@@ -84,7 +84,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BD307351D1409580074AC3B"
-            BuildableName = "OSX LEB128.framework"
+            BuildableName = "LEB128.framework"
             BlueprintName = "OSX LEB128"
             ReferencedContainer = "container:LEB128.xcodeproj">
          </BuildableReference>
