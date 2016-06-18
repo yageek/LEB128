@@ -27,6 +27,16 @@
 		0BD307651D140AC30074AC3B /* LEB128.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9F46B11D133C0B007EBB67 /* LEB128.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B0445D81D14399C005F7312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9F469B1D133B67007EBB67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BD307351D1409580074AC3B;
+			remoteInfo = "OSX LEB128";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0B9F46A21D133BA0007EBB67 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0B9F46A81D133BE5007EBB67 /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +213,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0B0445D91D14399C005F7312 /* PBXTargetDependency */,
 			);
 			name = OSXLEB128Tests;
 			productName = OSXLEB128Tests;
@@ -416,6 +427,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B0445D91D14399C005F7312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BD307351D1409580074AC3B /* OSX LEB128 */;
+			targetProxy = 0B0445D81D14399C005F7312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B9F469F1D133B67007EBB67 /* Debug */ = {
@@ -993,6 +1012,7 @@
 				0BD3072E1D1408FA0074AC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD3073B1D1409580074AC3B /* Build configuration list for PBXNativeTarget "OSX LEB128" */ = {
 			isa = XCConfigurationList;
@@ -1001,6 +1021,7 @@
 				0BD3073D1D1409580074AC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD3074E1D140A3F0074AC3B /* Build configuration list for PBXNativeTarget "tvOS LEB128" */ = {
 			isa = XCConfigurationList;
@@ -1009,6 +1030,7 @@
 				0BD307501D140A3F0074AC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0BD3075F1D140AAF0074AC3B /* Build configuration list for PBXNativeTarget "watchOS LEB128" */ = {
 			isa = XCConfigurationList;
@@ -1017,6 +1039,7 @@
 				0BD307611D140AAF0074AC3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
