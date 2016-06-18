@@ -44,13 +44,13 @@ class LEB128Tests: XCTestCase {
     // MARK: Helpers
     private func encodeUnsignedLeb(leb: UInt) -> ArraySlice<Byte> {
         let buff = ByteBuffer(size: 5)
-        let length = encode(buff, value: leb)
+        let length = encodeUnsignedLEB(buff, value: leb)
         return buff[0..<length]
     }
 
     private func encodeSignedLeb(leb: Int) -> ArraySlice<Byte> {
         let buff = ByteBuffer(size: 5)
-        let length = encode(buff, value: leb)
+        let length = encodeSignedLEB(buff, value: leb)
         return buff[0..<length]
     }
 
@@ -68,7 +68,7 @@ class LEB128Tests: XCTestCase {
 
         for (raw, bytes) in unsignedMap {
             let elements = ByteBuffer(elements: bytes)
-            XCTAssertEqual(raw, decodeULEB(elements))
+            XCTAssertEqual(raw, decodeUnsignedLEB(elements))
         }
     }
 
@@ -87,7 +87,7 @@ class LEB128Tests: XCTestCase {
 
         for (raw, bytes) in signedMap {
             let elements = ByteBuffer(elements: bytes)
-            XCTAssertEqual(raw, decodeSLEB(elements))
+            XCTAssertEqual(raw, decodeSignedLEB(elements))
         }
     }
 

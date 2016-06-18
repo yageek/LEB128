@@ -27,7 +27,7 @@ public protocol ByteIn {
  - returns:         The number of written byte
  */
 
-public func encode(out: ByteOut, value: UInt) -> Int {
+public func encodeUnsignedLEB(out: ByteOut, value: UInt) -> Int {
     var value = value
     var count = 0
 
@@ -45,39 +45,12 @@ public func encode(out: ByteOut, value: UInt) -> Int {
 }
 
 /**
- Encode the unsigned integer as LEB128 (Alternative)
-
- - parameter out:   The `ByteOut` to write in
- - parameter value: The `UInt` value to convert
- - returns:         The number of written byte
- */
-
-internal func encode2(out: ByteOut, value: UInt) -> Int {
-
-    var value = value
-    var count = 0
-    var remaining = value >> 7
-
-    while remaining != 0 {
-        out.write(Byte( (value & 0x7F) | 0x80 ))
-        count += 1
-        value = remaining
-        remaining = remaining >> 7
-    }
-
-    out.write(Byte(value & 0x7F))
-    count += 1
-
-    return count
-}
-
-/**
  Decode the unsigned integer as LEB128
 
  - parameter input: The `ByteIn` to read
  - returns:         The decoded value
  */
-public func decodeULEB(input: ByteIn) -> UInt {
+public func decodeUnsignedLEB(input: ByteIn) -> UInt {
     var result: UInt = 0
     var shift: UInt = 0
 
@@ -103,7 +76,7 @@ public func decodeULEB(input: ByteIn) -> UInt {
  - returns:         The number of written byte
  */
 
-public func encode(out: ByteOut, value: Int) -> Int {
+public func encodeSignedLEB(out: ByteOut, value: Int) -> Int {
 
     var value = value
     var more = true
@@ -132,7 +105,7 @@ public func encode(out: ByteOut, value: Int) -> Int {
  - parameter input: The `ByteIn` to read
  - returns:         The decoded value
  */
-public func decodeSLEB(input: ByteIn) -> Int {
+public func decodeSignedLEB(input: ByteIn) -> Int {
     var result: Int = 0
     var shift: Int = 0
     let size: Int = sizeof(Int.self) * 8
