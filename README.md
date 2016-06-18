@@ -32,25 +32,23 @@ let package = Package(
 ```swift
 
     /// Encoding
-
-    let value: UInt = 16256
     let buff = ByteBuffer(size: 5)
-    let length = encode(buff, value: value)
+    let length = encodeUnsignedLEB(buff, value: value)
     print("Value: \(buff[0..<length])")
     
 
     let value: Int = 16256
     let buff = ByteBuffer(size: 5)
-    let length = encode(buff, value: value)
+    let length = encodeSignedLEB(buff, value: value)
     print("Value: \(buff[0..<length])")
 
 
     /// Decoding
 
-    let encodedSigned = decodeSLEB(ByteBuffer(elements:[0x80, 0x7f]))
+    let encodedSigned = decodeUnsignedLEB(ByteBuffer(elements:[0x80, 0x7f]))
     print("Value: \(encodedSigned)")
 
-    let encodedUSigned = decodeSLEB(ByteBuffer(elements:[0x80, 0x7f]))
+    let encodedUSigned = decodeSignedLEB(ByteBuffer(elements:[0x80, 0x7f]))
     print("Value: \(encodedUSigned)")
 
 ```
