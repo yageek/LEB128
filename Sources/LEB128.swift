@@ -135,21 +135,21 @@ public func encode(out: ByteOut, value: Int) -> Int {
 public func decodeSLEB(input: ByteIn) -> Int {
     var result: Int = 0
     var shift: Int = 0
-    let size: Int = sizeof(Int.self)
-
+    let size: Int = sizeof(Int.self) * 8
     var byte: Byte = 0
 
     while true {
         byte = input.read()
         result |= ((Int(byte) & 0x7F) << shift)
+        shift += 7
 
-        if (byte >> 7) == 0 {
+        if ((byte & 0x80) >> 7) == 0 {
             break
         }
-        shift += 7
+
     }
 
-    if (shift < size) && Int(byte >> 7) == 1 {
+    if (shift < size) && ((Int(byte) & 0x40) >> 6) == 1 {
         result |= -(1 << shift)
     }
     return result
