@@ -63,4 +63,4 @@ pod 'Leb128'
 
 # License
 
-MIT licensed.
+LEB128 is released under the MIT license. See LICENSE for details.
