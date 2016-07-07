@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LEB128.podspec; sourceTree = "<group>"; };
 		0B9F46A21D133BA0007EBB67 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0B9F46A81D133BE5007EBB67 /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9F46B11D133C0B007EBB67 /* LEB128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEB128.h; sourceTree = "<group>"; };
@@ -100,6 +101,7 @@
 		0B9F469A1D133B67007EBB67 = {
 			isa = PBXGroup;
 			children = (
+				0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */,
 				0B9F46CE1D135B88007EBB67 /* .travis.yml */,
 				0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */,
 				0B9F46C81D1344CA007EBB67 /* LICENSE */,
