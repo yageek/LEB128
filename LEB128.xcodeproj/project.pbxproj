@@ -922,7 +922,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.watchOS-LEB128";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.LEB128;
 				PRODUCT_NAME = LEB128;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -974,7 +974,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.watchOS-LEB128";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.LEB128;
 				PRODUCT_NAME = LEB128;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
