@@ -27,6 +27,12 @@ let package = Package(
 ])
 ```
 
+## Cocoapods
+
+```
+pod Leb128
+```
+
 # Usage
 
 ```swift
