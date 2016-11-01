@@ -1,7 +1,14 @@
 language: objective-c
+
+before_install: rvm use $RVM_RUBY_VERSION
+install: bundle install --without=documentation --path ../travis_bundle_dir
+after_success: slather
+
 branches:
     only:
         - master
-osx_image: xcode7.3
+        - develop
+
+osx_image: xcode8
 xcode_project: LEB128.xcodeproj
 xcode_scheme: "OSX LEB128"

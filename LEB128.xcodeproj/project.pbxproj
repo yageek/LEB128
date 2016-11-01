@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5712F31DC8A5FE0010D62F /* .slather.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0B5712F21DC8A5FE0010D62F /* .slather.yml */; };
 		0B9F46B31D133C0B007EBB67 /* LEB128.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9F46B11D133C0B007EBB67 /* LEB128.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B9F46B71D133C98007EBB67 /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B51D133C98007EBB67 /* ByteBuffer.swift */; };
 		0B9F46B81D133C98007EBB67 /* LEB128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B61D133C98007EBB67 /* LEB128.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5712F21DC8A5FE0010D62F /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
 		0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LEB128.podspec; sourceTree = "<group>"; };
 		0B9F46A21D133BA0007EBB67 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0B9F46A81D133BE5007EBB67 /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +105,7 @@
 			children = (
 				0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */,
 				0B9F46CE1D135B88007EBB67 /* .travis.yml */,
+				0B5712F21DC8A5FE0010D62F /* .slather.yml */,
 				0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */,
 				0B9F46C81D1344CA007EBB67 /* LICENSE */,
 				0B9F46C91D1344CA007EBB67 /* README.md */,
@@ -287,6 +290,7 @@
 				TargetAttributes = {
 					0B9F46A71D133BE5007EBB67 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					0BD307261D1408FA0074AC3B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -342,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B5712F31DC8A5FE0010D62F /* .slather.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +509,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -555,6 +561,7 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -609,6 +616,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -651,6 +659,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.OSXLEB128Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -709,6 +718,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -761,6 +771,7 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -817,6 +828,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -867,6 +879,7 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VALIDATE_PRODUCT = YES;
@@ -922,11 +935,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.watchOS-LEB128";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.LEB128;
 				PRODUCT_NAME = LEB128;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -974,10 +988,11 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.yageek.watchOS-LEB128";
+				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.LEB128;
 				PRODUCT_NAME = LEB128;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";

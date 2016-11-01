@@ -8,8 +8,8 @@
 
 import Foundation
 
-/// Make NSStream compatible
-extension NSInputStream: ByteIn {
+/// Make Stream compatible
+extension InputStream: ByteIn {
 
     public func read() -> UInt8 {
         var value: UInt8 = 0
@@ -18,9 +18,9 @@ extension NSInputStream: ByteIn {
     }
 }
 
-extension NSOutputStream: ByteOut {
+extension OutputStream: ByteOut {
 
-    public func write(byte: UInt8) {
+    public func write(_ byte: UInt8) {
         var byte = byte
         self.write(&byte, maxLength: 1)
     }
