@@ -1,0 +1,9 @@
+//
+//  swiftversion.xcconfig
+//  LEB128
+//
+//  Created by Yannick Heinrich on 01.11.16.
+//
+//
+SWIFT_VERSION = 3.0
+

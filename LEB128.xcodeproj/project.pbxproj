@@ -60,6 +60,8 @@
 		0BD307361D1409580074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD307491D140A3F0074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3075A1D140AAF0074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDE25921DC8FC64000D57FA /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = swiftversion.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +124,10 @@
 		0B9F469A1D133B67007EBB67 = {
 			isa = PBXGroup;
 			children = (
+				0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */,
 				0B5713041DC8B4A80010D62F /* Tests */,
 				0B5712F41DC8A7F60010D62F /* Gemfile */,
+				0BDE25921DC8FC64000D57FA /* .swift-version */,
 				0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */,
 				0B9F46CE1D135B88007EBB67 /* .travis.yml */,
 				0B5712F21DC8A5FE0010D62F /* .slather.yml */,
@@ -456,6 +460,7 @@
 /* Begin XCBuildConfiguration section */
 		0B9F469F1D133B67007EBB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -481,6 +486,7 @@
 		};
 		0B9F46A01D133B67007EBB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -556,7 +562,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -608,7 +613,6 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -663,7 +667,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -706,7 +709,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.yageek.OSXLEB128Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
@@ -765,7 +767,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -818,7 +819,6 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -876,7 +876,6 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -928,7 +927,6 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VALIDATE_PRODUCT = YES;
@@ -990,7 +988,6 @@
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1043,7 +1040,6 @@
 				PRODUCT_NAME = LEB128;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
