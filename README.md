@@ -3,7 +3,11 @@ LEB128
 
 A library helping to deal with Little Endian Base 128.
 
+master:
 [![Build Status](https://travis-ci.org/yageek/LEB128.svg?branch=master)](https://travis-ci.org/yageek/LEB128)
+develop:
+[![Build Status](https://travis-ci.org/yageek/LEB128.svg?branch=develop)](https://travis-ci.org/yageek/LEB128)
+
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
