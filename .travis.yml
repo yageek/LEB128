@@ -10,4 +10,4 @@ branches:
         - develop
 
 osx_image: xcode8
-script: xcodebuild -alltargets -project "LEB128.xcodeproj" ONLY_ACTIVE_ARCH=NO | tee xcodebuild.log | xcpretty -f `xcpretty-travis-formatter`
+script: set -o pipefail && xcodebuild -alltargets -project "LEB128.xcodeproj" ONLY_ACTIVE_ARCH=NO | tee xcodebuild.log | xcpretty -f `xcpretty-travis-formatter`
