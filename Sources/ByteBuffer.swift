@@ -20,16 +20,16 @@ public func == (left: ByteBuffer, right: ByteBuffer) -> Bool {
 }
 
 /// ByteBuffer holds a buffer.
-public class ByteBuffer: ByteOut, ByteIn, Equatable {
+open class ByteBuffer: ByteOut, ByteIn, Equatable {
 
-    private var buff: ContiguousArray<Byte>
-    private var index: Int
+    fileprivate var buff: ContiguousArray<Byte>
+    fileprivate var index: Int
 
     /**
       Returns the buffer size
       - returns: The size of the buffer
      */
-    public var size: Int { return buff.count }
+    open var size: Int { return buff.count }
 
     /**
       Initialize a buffer with size
@@ -38,7 +38,7 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
     */
     public init(size: Int) {
         index = 0
-        buff = ContiguousArray(count: size, repeatedValue: 0)
+        buff = ContiguousArray(repeating: 0, count: size)
     }
 
     /**
@@ -60,8 +60,8 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
     /**
         Reset the buffer
     */
-    public func clear() {
-        buff = ContiguousArray<Byte>(count: size, repeatedValue: 0)
+    open func clear() {
+        buff = ContiguousArray<Byte>(repeating: 0, count: size)
         index = 0
     }
 
@@ -70,7 +70,7 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
       - parameter byte: The value to write in
      */
-    public func write(byte: Byte) {
+    open func write(_ byte: Byte) {
         defer {
             index += 1
         }
@@ -83,20 +83,20 @@ public class ByteBuffer: ByteOut, ByteIn, Equatable {
 
      - returns: The `Byte` at the current index.
    */
-    public func read() -> Byte {
+    open func read() -> Byte {
         defer {
             index += 1
         }
         return buff[index]
     }
 
-    public subscript (index: Int) -> Byte {
+    open subscript (index: Int) -> Byte {
         get {
             return buff[index]
         }
     }
 
-    public subscript(range: Range<Int>) -> ArraySlice<Byte> {
+    open subscript(range: Range<Int>) -> ArraySlice<Byte> {
         get {
             return buff[range]
         }

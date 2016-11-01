@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B57130A1DC8B4A80010D62F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B5713071DC8B4A80010D62F /* Info.plist */; };
+		0B57130C1DC8B4B10010D62F /* ByteBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5713061DC8B4A80010D62F /* ByteBufferTests.swift */; };
+		0B57130D1DC8B4B10010D62F /* LEB128Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5713081DC8B4A80010D62F /* LEB128Tests.swift */; };
 		0B9F46B31D133C0B007EBB67 /* LEB128.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B9F46B11D133C0B007EBB67 /* LEB128.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B9F46B71D133C98007EBB67 /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B51D133C98007EBB67 /* ByteBuffer.swift */; };
 		0B9F46B81D133C98007EBB67 /* LEB128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B61D133C98007EBB67 /* LEB128.swift */; };
 		0BD307021D13FBC00074AC3B /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD307011D13FBC00074AC3B /* Foundation.swift */; };
-		0BD3072F1D1409070074AC3B /* ByteBufferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */; };
-		0BD307301D1409090074AC3B /* LEB128Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46BF1D133CAE007EBB67 /* LEB128Tests.swift */; };
 		0BD307401D14096E0074AC3B /* ByteBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B51D133C98007EBB67 /* ByteBuffer.swift */; };
 		0BD307411D1409700074AC3B /* LEB128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F46B61D133C98007EBB67 /* LEB128.swift */; };
 		0BD307421D1409710074AC3B /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD307011D13FBC00074AC3B /* Foundation.swift */; };
@@ -38,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5712F21DC8A5FE0010D62F /* .slather.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .slather.yml; sourceTree = "<group>"; };
+		0B5712F41DC8A7F60010D62F /* Gemfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		0B5713061DC8B4A80010D62F /* ByteBufferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteBufferTests.swift; sourceTree = "<group>"; };
+		0B5713071DC8B4A80010D62F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B5713081DC8B4A80010D62F /* LEB128Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEB128Tests.swift; sourceTree = "<group>"; };
 		0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LEB128.podspec; sourceTree = "<group>"; };
 		0B9F46A21D133BA0007EBB67 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		0B9F46A81D133BE5007EBB67 /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,18 +51,17 @@
 		0B9F46B21D133C0B007EBB67 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B9F46B51D133C98007EBB67 /* ByteBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteBuffer.swift; sourceTree = "<group>"; };
 		0B9F46B61D133C98007EBB67 /* LEB128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LEB128.swift; sourceTree = "<group>"; };
-		0B9F46BF1D133CAE007EBB67 /* LEB128Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEB128Tests.swift; sourceTree = "<group>"; };
-		0B9F46C11D133CAE007EBB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B9F46C81D1344CA007EBB67 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0B9F46C91D1344CA007EBB67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		0B9F46CE1D135B88007EBB67 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
-		0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteBufferTests.swift; sourceTree = "<group>"; };
 		0BD307011D13FBC00074AC3B /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
 		0BD307271D1408FA0074AC3B /* OSXLEB128Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSXLEB128Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD307361D1409580074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD307491D140A3F0074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD3075A1D140AAF0074AC3B /* LEB128.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LEB128.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDE25921DC8FC64000D57FA /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = swiftversion.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,17 +103,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B5713041DC8B4A80010D62F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5713051DC8B4A80010D62F /* LEB128Tests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0B5713051DC8B4A80010D62F /* LEB128Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B5713061DC8B4A80010D62F /* ByteBufferTests.swift */,
+				0B5713071DC8B4A80010D62F /* Info.plist */,
+				0B5713081DC8B4A80010D62F /* LEB128Tests.swift */,
+			);
+			path = LEB128Tests;
+			sourceTree = "<group>";
+		};
 		0B9F469A1D133B67007EBB67 = {
 			isa = PBXGroup;
 			children = (
+				0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */,
+				0B5713041DC8B4A80010D62F /* Tests */,
+				0B5712F41DC8A7F60010D62F /* Gemfile */,
+				0BDE25921DC8FC64000D57FA /* .swift-version */,
 				0B590C7F1D2E5A8B00E61E66 /* LEB128.podspec */,
 				0B9F46CE1D135B88007EBB67 /* .travis.yml */,
+				0B5712F21DC8A5FE0010D62F /* .slather.yml */,
 				0B9F46CC1D13450C007EBB67 /* .swiftlint.yml */,
 				0B9F46C81D1344CA007EBB67 /* LICENSE */,
 				0B9F46C91D1344CA007EBB67 /* README.md */,
 				0B9F46A21D133BA0007EBB67 /* Package.swift */,
 				0B9F46A11D133B86007EBB67 /* Sources */,
-				0B9F46BE1D133CAE007EBB67 /* LEB128Tests */,
 				0B9F46A91D133BE5007EBB67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,16 +162,6 @@
 				0BD3075A1D140AAF0074AC3B /* LEB128.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0B9F46BE1D133CAE007EBB67 /* LEB128Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0BD306FF1D13FA180074AC3B /* ByteBufferTests.swift */,
-				0B9F46BF1D133CAE007EBB67 /* LEB128Tests.swift */,
-				0B9F46C11D133CAE007EBB67 /* Info.plist */,
-			);
-			path = LEB128Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,10 +300,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				TargetAttributes = {
 					0B9F46A71D133BE5007EBB67 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 					0BD307261D1408FA0074AC3B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -342,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B57130A1DC8B4A80010D62F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +412,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD3072F1D1409070074AC3B /* ByteBufferTests.swift in Sources */,
-				0BD307301D1409090074AC3B /* LEB128Tests.swift in Sources */,
+				0B57130C1DC8B4B10010D62F /* ByteBufferTests.swift in Sources */,
+				0B57130D1DC8B4B10010D62F /* LEB128Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,13 +460,52 @@
 /* Begin XCBuildConfiguration section */
 		0B9F469F1D133B67007EBB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
 		0B9F46A01D133B67007EBB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BDE25931DC8FCEA000D57FA /* swiftversion.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -469,7 +527,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -528,7 +586,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -600,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = LEB128Tests/Info.plist;
+				INFOPLIST_FILE = Tests/LEB128Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -644,7 +702,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = LEB128Tests/Info.plist;
+				INFOPLIST_FILE = Tests/LEB128Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -784,6 +842,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -842,6 +901,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -894,6 +954,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -953,6 +1014,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";

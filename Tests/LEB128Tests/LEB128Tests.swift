@@ -60,7 +60,7 @@ class LEB128Tests: XCTestCase {
     func testUnsignedEncode() {
         for (raw, bytes) in unsignedMap {
             let expected = ByteBuffer(elements: bytes)
-            XCTAssertEqual(expected[0..<expected.size], encodeUnsignedLeb(raw))
+            XCTAssertEqual(expected[0..<expected.size], encodeUnsignedLeb(leb: raw))
         }
     }
 
@@ -78,7 +78,7 @@ class LEB128Tests: XCTestCase {
     func testSignedEncode() {
         for (raw, bytes) in signedMap {
             let expected = ByteBuffer(elements: bytes)
-            XCTAssertEqual(expected[0..<expected.size], encodeSignedLeb(raw))
+            XCTAssertEqual(expected[0..<expected.size], encodeSignedLeb(leb: raw))
         }
 
     }

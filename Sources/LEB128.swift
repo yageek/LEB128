@@ -10,7 +10,7 @@ public typealias Byte = UInt8
 
 /// Protocol for output buffer
 public protocol ByteOut {
-    func write(byte: UInt8)
+    func write(_ byte: UInt8)
 }
 
 /// Protocol for input buffer
@@ -27,7 +27,7 @@ public protocol ByteIn {
  - returns:         The number of written byte
  */
 
-public func encodeUnsignedLEB(out: ByteOut, value: UInt) -> Int {
+public func encodeUnsignedLEB(_ out: ByteOut, value: UInt) -> Int {
     var value = value
     var count = 0
 
@@ -50,7 +50,7 @@ public func encodeUnsignedLEB(out: ByteOut, value: UInt) -> Int {
  - parameter input: The `ByteIn` to read
  - returns:         The decoded value
  */
-public func decodeUnsignedLEB(input: ByteIn) -> UInt {
+public func decodeUnsignedLEB(_ input: ByteIn) -> UInt {
     var result: UInt = 0
     var shift: UInt = 0
 
@@ -76,7 +76,7 @@ public func decodeUnsignedLEB(input: ByteIn) -> UInt {
  - returns:         The number of written byte
  */
 
-public func encodeSignedLEB(out: ByteOut, value: Int) -> Int {
+public func encodeSignedLEB(_ out: ByteOut, value: Int) -> Int {
 
     var value = value
     var more = true
@@ -105,10 +105,10 @@ public func encodeSignedLEB(out: ByteOut, value: Int) -> Int {
  - parameter input: The `ByteIn` to read
  - returns:         The decoded value
  */
-public func decodeSignedLEB(input: ByteIn) -> Int {
+public func decodeSignedLEB(_ input: ByteIn) -> Int {
     var result: Int = 0
     var shift: Int = 0
-    let size: Int = sizeof(Int.self) * 8
+    let size: Int = MemoryLayout<Int>.size * 8
     var byte: Byte = 0
 
     while true {
